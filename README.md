@@ -10,6 +10,9 @@ Many 'older' projects will accumulate assembly references to external libraries.
 - It's an older project that predates Nuget and some third-party references survived and now need to be rewired to Nuget.
 - There are multiple versions of the same library used in different parts of the code.
 
+This script quickly (!) processes all projects and packages to rewire all those bad assembly references.
+While you could use Nuget in VisualStudio to do this, Nuget is very, very slow on mass installs / updates. This script finishes in about 20 secs on a 200+ project code base on average developer hardware.
+
 # What does it do?
 This script will:
 1. Scan all installed Nuget packages for assemblies
