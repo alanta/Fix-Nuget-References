@@ -15,6 +15,7 @@ While you could use Nuget in VisualStudio to do this, Nuget is very, very slow o
 
 # What does it do?
 This script will:
+
 1. Scan all installed Nuget packages for assemblies
 2. Scan all C# project files (`.csproj`) for references to these assemblies
 3. For any matching assembly reference
